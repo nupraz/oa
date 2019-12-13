@@ -1,0 +1,7 @@
+[auth]
+token=2e339f2c896c4559a3fefc0d29e4db7a40f9111f13a74f0f8956f929fdd492c0
+
+[defaults]
+project=gjjjx
+org=bestvike
+url=https://sentry.bestvike.com/

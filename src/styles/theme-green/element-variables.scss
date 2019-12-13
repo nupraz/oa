@@ -1,0 +1,45 @@
+// 注意
+// 2.8.2版本开始变动
+// $--menu-item-color -> $--menu-item-font-color
+// $--menu-item-fill -> $--menu-background-color
+
+// 定义颜色
+$--color-primary: #06da9a;
+// $--color-primary-light-1: red;
+// $--color-primary-light-2: red;
+// $--color-primary-light-3: red;
+// $--color-primary-light-4: red;
+// $--color-primary-light-5: red;
+// $--color-primary-light-6: red;
+// $--color-primary-light-7: red;
+// $--color-primary-light-8: red;
+// $--color-primary-light-9: red;
+// $--color-primary-mix: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+
+// $--button-primary-border-color: $--color-primary !important;
+// $--button-primary-background-color: $--color-primary !important;
+
+// $--color-text-placeholder: #67C23A !important;
+
+$--table-header-color: #ffffff !important;
+$--table-header-background-color: #0faf7e !important;
+
+// 菜单文字颜色
+$--menu-item-font-color: #ffffff !important;
+// $--menu-item-active-color: #409EFF;
+// 菜单底色
+$--menu-background-color: #0faf7e;
+// 菜单hover底色
+$--menu-item-hover-fill: #00895f;
+
+// 自定义 - 子菜单展开底色
+$--sub-menu-expand-background-color: #079b6e;
+// 自定义 - 子菜单底色
+$--sub-menu-background-color: $--menu-background-color;
+// 自定义 - 激活菜单底色
+$--sub-menu-item-active-fill: $--menu-item-hover-fill;
+// 自定义 - 子菜单文字颜色
+$--sub-menu-item-color: $--menu-item-font-color;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";

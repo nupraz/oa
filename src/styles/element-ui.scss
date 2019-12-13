@@ -1,0 +1,233 @@
+//覆盖一些element-ui样式
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+.el-dialog__wrapper {
+  cursor: auto;
+  text-align: initial;
+}
+// 修改弹窗滚动条显示位置
+/*#app .el-dialog__wrapper {
+  overflow: hidden;
+}*/
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+
+  // 修改弹窗滚动条显示位置
+  // max-height: calc(100% - 16vh);
+  display: flex;
+  flex-direction: column;
+
+  /*> .el-dialog__body {
+    display: flex;
+    > .scrollbar {
+      width: 100%;
+    }
+  }*/
+}
+
+.el-dialog__headerbtn.el-dialog__helpbtn {
+  right: auto;
+  line-height: 24px;
+  margin-left: 5px;
+}
+
+//文章页textarea修改样式
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+  }
+}
+
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// form默认宽度100%
+.el-form {
+  width: 100%;
+  padding: 0 10px;
+}
+// confirm弹窗调整确定、取消按钮位置
+.el-button.confirm-cancel-normal {
+  float: right;
+  margin-left: 10px;
+}
+
+.el-button + .el-dropdown {
+  margin-left: 10px;
+}
+
+// 避免横向滚动条
+#app {
+  .el-scrollbar__wrap {
+    overflow-x: hidden;
+  }
+  .tags-view-container {
+    .el-scrollbar__wrap {
+      overflow: auto;
+    }
+  }
+}
+
+// 对话框修改
+.el-dialog__body {
+  > .el-scrollbar {
+    width: 100%;
+  }
+}
+
+/*.el-scrollbar.not-scrolled {
+  > .el-scrollbar__wrap {
+    margin-right: 0 !important;
+  }
+}*/
+
+// 避免弹窗引起右侧出现空白区域
+.el-popup-parent--hidden {
+  padding-right: 0 !important;
+}
+
+.el-date-editor.el-range-editor {
+  .el-range-separator {
+    width: 30px;
+  }
+}
+.el-date-editor.el-input.el-input--suffix {
+  width: 217px;
+}
+
+// 按钮调整图标显示位置
+.el-button .svg-icon + span {
+  margin-left: 5px;
+}
+
+.el-col-24 .form-item-fill {
+  width: 100%;
+}
+.form-item-fill .el-form-item__content {
+  width: 75%;
+}
+.form-item-fill .el-select {
+  width: 100%;
+}
+.form-item-line {
+  width: 100%;
+
+  .el-form-item__content {
+    width: 100%;
+  }
+}
+
+.form-item-label-only {
+  margin-bottom: 0;
+}
+
+.el-tabs .el-tabs__nav-wrap::after {
+  height: 1px;
+}
+.el-tabs.el-tabs--align-center .el-tabs__nav {
+  margin: 0 auto;
+  float: none;
+}
+.el-tabs.el-tabs--secondary {
+  .el-tabs__active-bar {
+    display: none;
+  }
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+  &.el-tabs--top {
+    .el-tabs__item.is-top:nth-child(2) {
+      padding-left: 20px;
+    }
+    .el-tabs__item.is-top:last-child {
+      padding-right: 20px;
+    }
+  }
+  .el-tabs__item {
+    color: #474747;
+    background-color: #EFF0F0;
+    border-radius: 20px !important;
+    margin: 0 5px;
+  }
+}
+/*.el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item:nth-child(2):hover {
+  padding-left: 13px;
+}
+.el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item.is-active.is-closable {
+  padding-left: 13px;
+}*/
+
+.el-message {
+  z-index: 6000 !important;
+}

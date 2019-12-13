@@ -1,0 +1,46 @@
+@import './element-variables.scss';
+
+.article-textarea {
+  textarea {
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+// table调整
+.bv-table {
+  .table-header {
+    border-bottom: 1px solid $--border-color-lighter;
+  }
+  .el-table {
+    .el-table__header {
+      thead {
+        color: #ffffff;
+      }
+    }
+    
+    .sort-caret.ascending {
+      border-bottom-color: #ffffff;
+    }
+    .sort-caret.descending {
+      border-top-color: #ffffff;
+    }
+    .ascending {
+      .sort-caret.ascending {
+        border-bottom-color: #b0d7ff;
+      }
+    }
+    .descending {
+      .sort-caret.descending {
+        border-top-color: #b0d7ff;
+      }
+    }
+  }
+}
+.el-tabs.el-tabs--secondary {
+  .el-tabs__item {
+    &.is-active {
+      color: #FFFFFF;
+      background-color: $--color-primary;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.simple-table {
+  padding-bottom: 5px;
+}
+.simple-table-container {
+  margin: 0 10px;
+}
+.simple-table-container .simple-table-toolbar {
+  width: 100%;
+  border-bottom: 1px solid #D3D7DA;
+  margin-bottom: 20px;
+  margin-top: 16px;
+  color: #333333;
+  height: 37px;
+  line-height: 37px;
+  font-weight: 700;
+  position: relative;
+}
+.simple-table-toolbar .simple-table-title {
+  position: absolute;
+  min-width: 100px;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 4px solid #3377BE;
+  font-size: 14px;
+}
+.simple-table-toolbar .simple-table-title i {
+  padding: 0 8px 0 4px;
+  color: #3377BE;
+}
+/*.el-icon-menu :before {
+  content: "\e64a";
+}*/
+.simple-table-toolbar .simple-table-operate {
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+}
+.simple-table-operate {
+  font-size: 0;
+}
+.simple-table-operate .el-button {
+  margin: 0 2px;
+}
+.simple-table .simple-table-filter {
+  width: 100%;
+}
+.simple-table-filter {
+  height: 36px;
+}
+.simple-table-filter .filter-left {
+  float: left;
+  position: relative;
+  left: 0;
+  width: 45%;
+}
+.simple-table .simple-table-filter-more {
+  width: 100%;
+  height: 36px;
+}
+.simple-table .table-responsive {
+  width: 100%;
+  margin-top: 10px;
+  min-height: 40px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  position: relative;
+}
+.simple-table-body {
+  overflow: auto;
+  max-width: 100%;
+}
+.table-responsive .simple-table-footer {
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+  display: inline-block;
+  border-top: 1px solid #ddd;
+}
+/*修改table行样式*/
+.el-tbody th {
+  padding: 10px 0!important;
+}
+.el-tbody td {
+  padding: 6px 0!important;
+}
+.el-table__expanded-cell {
+  left: 55px;
+}

@@ -1,0 +1,94 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+@include b(example) {
+  // default size
+
+  @include m(default) {
+    & > .header {
+      font-size: 18px;
+    }
+  }
+
+  @include m(medium) {
+    & > .header {
+      font-size: 16px;
+    }
+  }
+
+  @include m(small) {
+    & > .header {
+      font-size: 14px;
+    }
+  }
+
+  @include m(mini) {
+    & > .header {
+      font-size: 12px;
+    }
+  }
+
+  @include e(title) {
+    // text-align: center;
+    color: $--color-text-primary;
+  }
+
+  @include e(theme) {
+    & > .color-primary {
+      color: $--color-primary;
+    }
+    & > .color-primary-light-1 {
+      color: $--color-primary-light-1;
+    }
+    & > .color-primary-light-2 {
+      color: $--color-primary-light-2;
+    }
+    & > .color-primary-light-3 {
+      color: $--color-primary-light-3;
+    }
+    & > .color-primary-light-4 {
+      color: $--color-primary-light-4;
+    }
+    & > .color-primary-light-5 {
+      color: $--color-primary-light-5;
+    }
+    & > .color-primary-light-6 {
+      color: $--color-primary-light-6;
+    }
+    & > .color-primary-light-7 {
+      color: $--color-primary-light-7;
+    }
+    & > .color-primary-light-8 {
+      color: $--color-primary-light-8;
+    }
+    & > .color-primary-light-9 {
+      color: $--color-primary-light-9;
+    }
+    & > .color-primary-mix {
+      color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+    }
+    & > .color-text-primary {
+      color: $--color-text-primary;
+    }
+    & > .link-color {
+      color: $--link-color;
+    }
+    & > .link-hover-color {
+      color: $--link-hover-color;
+    }
+  }
+
+  @include e(href) {
+    color: $--link-color;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      color: $--link-hover-color;
+      // background-color: $--color-primary-light-9;
+    }
+
+    @include m(mini) {
+      font-size: 11px;
+    }
+  }
+}
