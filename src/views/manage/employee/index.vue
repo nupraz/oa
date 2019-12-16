@@ -23,15 +23,14 @@
             <bv-button show="oneOrMore" view="remove" @click="startRemove()">删除</bv-button>
           </div>
           <bv-table-column type="selection" />
-          <!--<bv-table-column label="所属部门" prop="deptName" align="center" />-->
-          <bv-table-column label="员工姓名" prop="name" align="center" />
+          <bv-table-column label="员工姓名" prop="empName" align="center" />
           <bv-table-column label="级别" prop="grade" align="center" >
             <template slot-scope="scope">{{ getGrade(scope.row.grade) }}</template>
           </bv-table-column>
           <bv-table-column label="岗位" prop="postName" align="center" />
-          <bv-table-column label="是否参与评分" prop="needScore" align="center" >
+          <!--<bv-table-column label="是否参与评分" prop="needScore" align="center" >
             <template slot-scope="scope">{{ scope.row.needScore=='1'?'是':'否' }}</template>
-          </bv-table-column>
+          </bv-table-column>-->
           <bv-table-column label="状态" prop="status" align="center" >
             <template slot-scope="scope">{{ getStatus(scope.row.status) }}</template>
           </bv-table-column>
@@ -41,8 +40,8 @@
           <bv-form ref="dialogForm" :model="item" :rules="rules">
             <bv-row layout="dialog-2">
               <bv-col>
-                <bv-form-item label="员工姓名" prop="name">
-                  <el-input v-model.trim="item.name" style="width: 108%" />
+                <bv-form-item label="员工姓名" prop="empName">
+                  <el-input v-model.trim="item.empName" style="width: 108%" />
                   <!--<el-input v-if="modifyType === 'create'" v-model.trim="item.name" style="width: 108%"/>
                   <span v-else v-text="item.name" />-->
                 </bv-form-item>
@@ -276,7 +275,6 @@
       // 新增、修改弹窗部门下拉框选项变化
       changeDept() {
         let deptId = this.item.deptId;
-        // console.log(deptId);
         let dept;
         for (var i = 0; i < this.deptData.length; i++) {
           let deptTemp = this.deptData[i];

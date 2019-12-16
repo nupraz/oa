@@ -119,7 +119,7 @@
 
 <script>
   import { queryEmpOrderInfo, addEmpOrderInfo, editEmpOrderInfo, deleteEmpOrderInfo, exportEmpOrderData,
-    fetchIsShowAddAndEmpOptions, fetchEmpData , fetchRestaurantsInUse, fetchMenusInUseByRestId} from '../../api/empOrder'
+    fetchIsShowAddAndEmpOptions, fetchEmpData , fetchRestaurantsInUse, fetchMenusInUseByRestId} from '@/api/empOrder'
   import moment from 'moment'
   export default {
     name:'EmpOrderManage',
